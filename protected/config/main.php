@@ -54,7 +54,7 @@ return array(
 		// uncomment the following to use a MySQL database
 
 		'db'=>array(
-
+            'class' => 'CDbConnection',
 			'connectionString' => 'pgsql:host=localhost;port=5432;dbname=backlog',
 			'emulatePrepare' => true,
 			'username' => 'postgres',

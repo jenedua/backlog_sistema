@@ -12,17 +12,20 @@ return array(
 	// application components
 	'components'=>array(
 		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+			//'connectionString' => 'pgsql:'.dirname(__FILE__).'/../data/backlog.db',
+            'db' => require(__DIR__ . 'db.php'),
 		),
 		// uncomment the following to use a MySQL database
 
         'db'=>array(
-            'connectionString' => 'pgsql:host=localhost;dbname=backlog',
+            'connectionString' => 'pgsql:host=localhost;port=5234;dbname=backlog',
             'emulatePrepare' => true,
             'username' => 'postgres',
             'password' => 'mamut321.',
             'charset' => 'utf8',
         ),
+
+    ),
 
 		'log'=>array(
 			'class'=>'CLogRouter',
@@ -33,5 +36,6 @@ return array(
 				),
 			),
 		),
-	),
+
+	//),
 );
