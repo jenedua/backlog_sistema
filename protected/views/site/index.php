@@ -2,8 +2,10 @@
 /* @var $this SiteController */
 
 $this->pageTitle=Yii::app()->name;
-
+ $username = Users::model()->findAll();
+ print_r($username);
 ?>
+
 
 <h1>Bem-vindo ao Backlog Sistema interno da NeoConsigo</h1>
 <!--

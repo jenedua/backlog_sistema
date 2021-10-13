@@ -30,7 +30,7 @@ return array(
 
 	),
 
-	// application components
+	// application components'db' => require(__DIR__ . 'db.php'),
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
@@ -46,21 +46,20 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		/*
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
-		*/
+
+        'db' => require(__DIR__ . '/db.php'),
+
 		// uncomment the following to use a MySQL database
 
-		'db'=>array(
-            'class' => 'CDbConnection',
-			'connectionString' => 'pgsql:host=localhost;port=5432;dbname=backlog',
-			'emulatePrepare' => true,
-			'username' => 'postgres',
-			'password' => 'mamut321.',
-			'charset' => 'utf8',
-		),
+//		'db'=>array(
+//            'class'=>'CDbConnection',
+//			'connectionString' => 'pgsql:host=localhost;port=5432;dbname=backlog',
+//			//'emulatePrepare' => 'true',
+//			'username' => 'postgres',
+//			'password' => 'mamut321.',
+//			'charset' => 'utf8',
+//
+//		),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
