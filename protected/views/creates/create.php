@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Creates</h1>
+<h1>Created Backlog System</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
