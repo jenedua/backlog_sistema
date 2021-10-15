@@ -1,7 +1,7 @@
 <?php
 
 // uncomment the following to define a path alias
-Yii::setPathOfAlias('local','path/to/local-folder');
+//Yii::setPathOfAlias('local','path/to/local-folder');
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
@@ -33,6 +33,7 @@ return array(
 	// application components'db' => require(__DIR__ . 'db.php'),
 	'components'=>array(
 		'user'=>array(
+           // 'class'=>'application.components.UserLevel', // ← AQUI VEM A ALTERAÇÃO!
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
@@ -41,9 +42,11 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
+
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+
 			),
 		),
 

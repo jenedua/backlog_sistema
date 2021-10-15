@@ -4322,3 +4322,169 @@ REQUEST_URI=/backlog_sistema/index.php/user/index
 in /var/www/html/backlog_sistema/protected/views/layouts/main.php (43)
 in /var/www/html/backlog_sistema/protected/views/layouts/column1.php (6)
 in /var/www/html/backlog_sistema/protected/controllers/UserController.php (7)
+2021/10/14 09:44:05 [error] [php] Trying to get property of non-object (/var/www/html/yii/framework/zii/widgets/CBreadcrumbs.php:116)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#2 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(76): UsersController->renderFile()
+#3 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#4 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 /var/www/html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#6 /var/www/html/yii/framework/web/CBaseController.php(300): UsersController->endWidget()
+#7 /var/www/html/backlog_sistema/protected/views/layouts/column2.php(22): UsersController->endContent()
+#8 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(784): UsersController->renderFile()
+#11 /var/www/html/backlog_sistema/protected/controllers/UsersController.php(128): UsersController->render()
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#13 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#15 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#18 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/html/backlog_sistema/index.php(13): CWebApplication->run()
+REQUEST_URI=/backlog_sistema/index.php/users
+in /var/www/html/backlog_sistema/protected/views/layouts/main.php (43)
+in /var/www/html/backlog_sistema/protected/views/layouts/column2.php (22)
+in /var/www/html/backlog_sistema/protected/controllers/UsersController.php (128)
+2021/10/14 09:59:31 [error] [php] Trying to get property of non-object (/var/www/html/yii/framework/zii/widgets/CBreadcrumbs.php:116)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#2 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(76): UsersController->renderFile()
+#3 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#4 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 /var/www/html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#6 /var/www/html/yii/framework/web/CBaseController.php(300): UsersController->endWidget()
+#7 /var/www/html/backlog_sistema/protected/views/layouts/column2.php(22): UsersController->endContent()
+#8 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(784): UsersController->renderFile()
+#11 /var/www/html/backlog_sistema/protected/controllers/UsersController.php(128): UsersController->render()
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#13 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#15 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#18 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/html/backlog_sistema/index.php(13): CWebApplication->run()
+REQUEST_URI=/backlog_sistema/index.php/users/
+in /var/www/html/backlog_sistema/protected/views/layouts/main.php (43)
+in /var/www/html/backlog_sistema/protected/views/layouts/column2.php (22)
+in /var/www/html/backlog_sistema/protected/controllers/UsersController.php (128)
+2021/10/14 10:07:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create.php".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('create.php')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create.php')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create.ph...')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/backlog_sistema/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backlog_sistema/index.php/users/create.php
+---
+2021/10/14 10:08:47 [error] [php] Trying to get property of non-object (/var/www/html/yii/framework/zii/widgets/CBreadcrumbs.php:116)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#2 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(76): UsersController->renderFile()
+#3 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#4 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 /var/www/html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#6 /var/www/html/yii/framework/web/CBaseController.php(300): UsersController->endWidget()
+#7 /var/www/html/backlog_sistema/protected/views/layouts/column2.php(22): UsersController->endContent()
+#8 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(95): UsersController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(784): UsersController->renderFile()
+#11 /var/www/html/backlog_sistema/protected/controllers/UsersController.php(128): UsersController->render()
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#13 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#15 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#18 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /var/www/html/backlog_sistema/index.php(13): CWebApplication->run()
+REQUEST_URI=/backlog_sistema/index.php/users/
+in /var/www/html/backlog_sistema/protected/views/layouts/main.php (43)
+in /var/www/html/backlog_sistema/protected/views/layouts/column2.php (22)
+in /var/www/html/backlog_sistema/protected/controllers/UsersController.php (128)
+2021/10/14 10:15:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "views".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('views')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('views')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/views')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/backlog_sistema/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backlog_sistema/index.php/users/views
+---
+2021/10/14 10:16:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('create')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/backlog_sistema/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backlog_sistema/index.php/user/create
+---
+2021/10/14 10:27:37 [error] [php] Undefined variable: dataProvider (/var/www/html/backlog_sistema/protected/views/users/index.php:18)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): UsersController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): UsersController->renderPartial()
+#2 /var/www/html/backlog_sistema/protected/controllers/UsersController.php(129): UsersController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/backlog_sistema/index.php(13): CWebApplication->run()
+REQUEST_URI=/backlog_sistema/index.php/users/
+in /var/www/html/backlog_sistema/protected/views/users/index.php (18)
+in /var/www/html/backlog_sistema/protected/controllers/UsersController.php (129)
+in /var/www/html/backlog_sistema/index.php (13)
+2021/10/14 10:46:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('create')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/create')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/backlog_sistema/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backlog_sistema/index.php/site/create
+HTTP_REFERER=http://localhost/backlog_sistema/index.php/site/login
+---
+2021/10/14 10:48:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('create')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/backlog_sistema/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/backlog_sistema/index.php/user/create
+---
